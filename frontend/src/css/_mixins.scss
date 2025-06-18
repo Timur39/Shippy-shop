@@ -1,0 +1,23 @@
+@mixin list-of-items {
+  margin-bottom: 3%;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    background-color: var(--color-white);
+    border-radius: var(--radius-normal);
+    width: 40vw;
+    height: 30vh;
+
+    &-title {
+      font-size: 1.75rem;
+    }
+  }
+}

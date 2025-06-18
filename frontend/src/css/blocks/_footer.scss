@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--color-white);
+  padding: 1vh;
+  text-align: center;
+  margin-inline: -20px;
+
+  &__title {
+    color: var(--color-gray-alternate);
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  &__social-media-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+}

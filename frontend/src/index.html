@@ -14,93 +14,131 @@
       content="одежда, интернет-магазин, стиль, качество, низкие цены"
     />
   </head>
-  <body>
-    <header id="header" class="header">
-      <h1><a href="#" class="header__title">Shippy</a></h1>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#">Главная</a></li>
-          <li class="header__nav-item"><a href="#">Магазин</a></li>
-          <li class="header__nav-item"><a href="#">Контакты</a></li>
-          <li class="header__nav-item"><a href="#">Корзина</a></li>
+  <body class="page">
+    <header class="header">
+      <a class="header__logo logo" href="#"
+        ><h1 class="header__logo-title logo__title">Shippy</h1></a
+      >
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Магазин</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Контакты</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main id="main" class="main">
-      <section class="banner">
-        <img class="banner__img" src="#" alt="Главный баннер" />
-      </section>
-      <section class="popular-category">
+    <main class="content">
+      <div class="banner container">
+        <img class="banner__img" src="images/banner.jpg" alt="Главный баннер" />
+      </div>
+      <section class="popular-category container">
         <h2 class="popular-category__title">Популярные категории</h2>
+
         <ul class="popular-category__list">
           <li class="popular-category__item">
-            <h2 class="popular-category__item-title">Мужская</h2>
-            <img
-              class="popular-category__item-img"
-              src="#"
-              alt="Изображение категории"
-            />
+            <h3 class="popular-category__item-title">Мужская</h3>
+            <div class="popular-category__item-img-wrapper">
+              <img
+                class="popular-category__item-img"
+                src="images/Man-category.jpg"
+                alt="Изображение категории"
+              />
+            </div>
           </li>
           <li class="popular-category__item">
-            <h2 class="popular-category__item-title">Женская</h2>
-            <img
-              class="popular-category__item-img"
-              src="#"
-              alt="Изображение категории"
-            />
+            <h3 class="popular-category__item-title">Женская</h3>
+            <div class="popular-category__item-img-wrapper">
+              <img
+                class="popular-category__item-img"
+                src="images/Woman-category.jpg"
+                alt="Изображение категории"
+              />
+            </div>
           </li>
           <li class="popular-category__item">
-            <h2 class="popular-category__item-title">Аксессуары</h2>
-            <img
-              class="popular-category__item-img"
-              src="#"
-              alt="Изображение категории"
-            />
+            <h3 class="popular-category__item-title">Акссесуары</h3>
+            <div class="popular-category__item-img-wrapper">
+              <img
+                class="popular-category__item-img"
+                src="images/accessories-category.jpg"
+                alt="Изображение категории"
+              />
+            </div>
           </li>
         </ul>
       </section>
-      <section class="new-products">
+      <section class="new-products container">
         <h2 class="new-products__title">Новинки и акции</h2>
+
         <ul class="new-products__list">
           <li class="new-products__item">
-            <h2 class="new-products__item-title">Новинка 1</h2>
-            <img
-              class="new-products__item-img"
-              src="#"
-              alt="Изображение продукта"
-            />
+            <h3 class="new-products__item-title">Новинка 1</h3>
+            <div class="popular-category__item-img-wrapper">
+              <img
+                class="new-products__item-img"
+                src="images/product1.jpg"
+                alt="Изображение продукта"
+              />
+            </div>
           </li>
           <li class="new-products__item">
-            <h2 class="new-products__item-title">Новинка 2</h2>
-            <img
-              class="new-products__item-img"
-              src="#"
-              alt="Изображение продукта"
-            />
+            <h3 class="new-products__item-title">Новинка 2</h3>
+            <div class="popular-category__item-img-wrapper">
+              <img
+                class="new-products__item-img"
+                src="images/product2.jpg"
+                alt="Изображение продукта"
+              />
+            </div>
           </li>
           <li class="new-products__item">
-            <h2 class="new-products__item-title">Новинка 3</h2>
-            <img
-              class="new-products__item-img"
-              src="#"
-              alt="Изображение продукта"
-            />
+            <h3 class="new-products__item-title">Новинка 3</h3>
+            <div class="popular-category__item-img-wrapper">
+              <img
+                class="new-products__item-img"
+                src="images/product3.jpg"
+                alt="Изображение продукта"
+              />
+            </div>
           </li>
         </ul>
       </section>
     </main>
-
-    <footer id="footer" class="footer">
-      <h2 class="footer__title">&copy; 2025 Shippy. Все права защищены.</h2>
-      <ul class="footer__social-media-list">
-        <li class="footer__social-media-item">
-          <a href="#"><img src="icons/Facebook.svg" alt="facebook-icon" /></a>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2025 Shippy. Все права защищены.</p>
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#"
+            ><img
+              class="socials-list__icon"
+              src="icons/Facebook.svg"
+              alt="facebook-icon"
+          /></a>
         </li>
-        <li class="footer__social-media-item">
-          <a href="#"><img src="icons/Instagram.svg" alt="instagram-icon" /></a>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#"
+            ><img
+              class="socials-list__icon"
+              src="icons/Instagram.svg"
+              alt="instagram-icon"
+          /></a>
         </li>
-        <li class="footer__social-media-item">
-          <a href="#"><img src="icons/Twitter.svg" alt="twitter-icon" /></a>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="#"
+            ><img
+              class="socials-list__icon"
+              src="icons/Twitter.svg"
+              alt="twitter-icon"
+          /></a>
         </li>
       </ul>
     </footer>

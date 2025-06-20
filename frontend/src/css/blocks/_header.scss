@@ -1,20 +1,21 @@
 .header {
   background-color: var(--color-gray);
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2%;
 
-  &__title {
-    color: var(--color-black);
-    font-size: 2rem;
-  }
-  
-  &__nav-list {
-    display: flex;
-    gap: 15px;
+  &__logo {
+    &-title {
+      color: var(--color-black);
+      font-size: 2rem;
+    }
   }
 
-
+  &__menu {
+    &-list {
+      display: flex;
+      gap: 15px;
+    }
+  }
 }

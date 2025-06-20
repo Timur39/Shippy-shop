@@ -1,6 +1,4 @@
 @mixin list-of-items {
-  margin-bottom: 3%;
-
   &__title {
     font-size: 2rem;
   }
@@ -13,11 +11,18 @@
   &__item {
     background-color: var(--color-white);
     border-radius: var(--radius-normal);
+    padding: 0 10px 10px 10px;
     width: 40vw;
-    height: 30vh;
 
     &-title {
       font-size: 1.75rem;
+    }
+
+    &-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: var(--radius-small);
     }
   }
 }

@@ -1,10 +1,21 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url("frontend/src/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("frontend/src/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 300;
+}
 body {
-  color: black;
+  color: var(--color-black);
   background-color: var(--color-gray);
   padding-inline: 20px;
   min-height: 100vh;
-  display: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -16,14 +27,24 @@ a:hover {
   opacity: 0.7;
 }
 
+.container {
+  max-width: calc(var(--container-max-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
 :root {
   --color-gray: #f3f4f6;
   --color-gray-alternate: #4b5563;
   --color-light-gray: lightgray;
   --color-white: #ffffff;
   --color-blue: #3b82f6;
+  --color-black: black;
   --radius-normal: 8px;
   --radius-small: 4px;
+  --header-height: 50px;
+  --container-max-width: 1263px;
+  --container-padding-x: 15px;
 }
 
 /**
@@ -225,7 +246,7 @@ svg * {
   font-size: 1rem;
   margin-bottom: 8px;
 }
-.footer__social-media-list {
+.footer .socials-list {
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -233,26 +254,29 @@ svg * {
 
 .header {
   background-color: var(--color-gray);
-  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2%;
 }
-.header__title {
+.header__logo-title {
   color: var(--color-black);
   font-size: 2rem;
 }
-.header__nav-list {
+.header__menu-list {
   display: flex;
   gap: 15px;
 }
 
 .banner {
-  background-color: var(--color-light-gray);
-  height: 50vh;
   margin-bottom: 2%;
+}
+.banner__img {
   border-radius: var(--radius-normal);
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .new-products {
@@ -268,11 +292,18 @@ svg * {
 .new-products__item {
   background-color: var(--color-white);
   border-radius: var(--radius-normal);
+  padding: 0 10px 10px 10px;
   width: 40vw;
-  height: 30vh;
 }
 .new-products__item-title {
   font-size: 1.75rem;
+}
+.new-products__item-img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--radius-small);
 }
 
 .popular-category {
@@ -288,9 +319,16 @@ svg * {
 .popular-category__item {
   background-color: var(--color-white);
   border-radius: var(--radius-normal);
+  padding: 0 10px 10px 10px;
   width: 40vw;
-  height: 30vh;
 }
 .popular-category__item-title {
   font-size: 1.75rem;
+}
+.popular-category__item-img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: var(--radius-small);
 }/*# sourceMappingURL=styles.css.map */
